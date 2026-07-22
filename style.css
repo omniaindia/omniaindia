@@ -4,10 +4,26 @@ p{
 body{
     background-color:#000000;
 }
+/* ---- 1. Laptop / Desktop View ---- */
+.site-logo {
+    width: 95%;           /* Screen ka 80% area lega, bohot bada nahi dikhega */
+    max: width 1590px;     /* Laptop par itse bada kabhi nahi hoga */
+    height: 850;         /* Aspect ratio kharab nahi hoga */
+    display: block;
+    margin: 0 auto;       /* Screen ke center me rahega */
+}
+
+/* ---- 2. Mobile / Phone View ---- */
+@media screen and (max-width: 768px) {
+    .site-logo {
+        width: 100%;       /* Mobile par lagbhag full screen me fit rahega */
+        max-width: 100%;  /* Screen se baahar bilkul nahi katega */
+    }
+}
 /* Futuristic Slogan Typewriter Look */
 .futuristic-brand-punchline {
     color: #00f0ff;                              /* Brand Electric Cyan */
-    font-family: 'Courier New', Courier, monospace; /* Clean terminal look */
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; /* Clean terminal look */
     font-size: 1.5rem;
     letter-spacing: 2px;
     font-weight: 600;
