@@ -1,97 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OMNIA INDIA</title>
-    <title>omxindia</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OMNIA INDIA</title>
+<title>omxindia</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <!-- this is my top title -->
 <body>
 <div>
-        <h1 style="color:#00f0ff;">WELCOME TO OMNIA INDIA</h1>
-        <img src="logo.png.png" alt="logo.png" style="width: 1590px; height: 850px;">
-        
-       <h2 class="futuristic-brand-punchline" data-words="EXPERIENCE OF THE FUTURE, LIVE VISUALS DESIGN, TECH EVENT EXECUTION,A UNITY OF OMNIA INDIA"></h2>
-
-        <div class="button" style="text-align:center; margin-top: 4px; margin-bottom: 4px;">
-    <a href="#" class="btn">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="btn">ABOUT US</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="btn">PROJECT</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="btn">EDUCATION</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="btn">CONTACT US </a>
-        </div>
+<h1 style="color:#00f0ff;">WELCOME TO OMNIA INDIA</h1>
+<img src="logo.png.png" alt="logo.png" style="width: 1590px; height: 850px;">
+<h2 class="futuristic-brand-punchline" data-words="EXPERIENCE OF THE FUTURE, LIVE VISUALS DESIGN, TECH EVENT EXECUTION,A UNITY OF OMNIA INDIA"></h2>
+<div class="button" style="text-align:center; margin-top: 4px; margin-bottom: 4px;">
+<a href="#" class="btn">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="btn">ABOUT US</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="btn">PROJECT</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="btn">EDUCATION</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="btn">CONTACT US </a>
 </div>
-    <!--USING JAVA SCRIIPT-->
+</div>
+<!--USING JAVA SCRIIPT-->
 <script>
 const el = document.querySelector('.futuristic-brand-punchline');
 const words = ["EXPERIENCE OF THE FUTURE", "LIVE VISUALS DESIGN", "TECH EVENT EXECUTION", "A UNITY OF OMNIA INDIA"];
 let i = 0, timer;
-
 function type() {
-    let word = words[i % words.length], chars = word.substring(0, el.innerHTML.length + 1);
-    el.innerHTML = chars;
-    if (chars === word) return setTimeout(() => del(), 2000); // Poora type hone par 2 sec break
-    timer = setTimeout(type, 100);
+let word = words[i % words.length], chars = word.substring(0, el.innerHTML.length + 1);
+el.innerHTML = chars;
+if (chars === word) return setTimeout(() => del(), 2000); // Poora type hone par 2 sec break
+timer = setTimeout(type, 100);
 }
 function del() {
-    let chars = el.innerHTML.substring(0, el.innerHTML.length - 1);
-    el.innerHTML = chars;
-    if (chars === "") { i++; return setTimeout(type, 500); } // Delete hone par agla word
-    timer = setTimeout(del, 50);
+let chars = el.innerHTML.substring(0, el.innerHTML.length - 1);
+el.innerHTML = chars;
+if (chars === "") { i++; return setTimeout(type, 500); } // Delete hone par agla word
+timer = setTimeout(del, 50);
 }
 type(); // Loop start karne ke liye
 </script>
-
-
-
-    <img src="/banner.png.png" alt="banner.png" width="100%" height="300%">
-
-<!--HEAR ARE MY SECTIONS AND DISCRIPTIONS BUTTONS  -->
+<img src="/banner.png.png" alt="banner.png" width="100%" height="300%">
+<!--HEAR ARE MY SECTIONS AND DISCRIPTIONS BUTTONS -->
 <div>
 <div class="main-content-box">
-    <h3 class="section-btn"><a href="#">SECTION 1</a></h3>
-       <h4>DISCRIPTION:</h4>
-    <p>OMNIA INDIA Is a mordern Technical & Visual Desine Studio  We Specialize In High And Live Visuals (Vjing) end to end .event tech execution and digital experentiol content</p>
-    <br><br>
-     <h3 class="section-btn"><a href="#">SECTION 2</a></h3>
-    <h4>EDUCATION:</h4>
-    <p>Pursuing a Bachelor of Technology (B.Tech) specializing in Computer Science & Internet of Things (CSIOT). Cultivating advanced technical skills in smart hardware integration, data networks, and system architecture. Actively bridging the gap between engineering logic and high-end digital creativity. Leveraging academic core knowledge to design innovative visual solutions and real-world event tech execution.</p>
-      <h3 class="section-btn"><a href="#">SECTION 3</a></h3>
-     <h4>PROJECTS:</h4>
-</div>  
-      </div>
-
-    <br><br>
-
-    <!-- HEAR ARE MY CONTACTS DETAILS -->
-<div class="contact-content-box">
-    <h3 class="section-btn"><a href="#">CONTACTS</a></h3>
-
-    <p>
-        <a href="mailto:omnxindia01@gmail.com">
-            <i class="fa-solid fa-envelope"></i> gmail: omnxindia01@gmail.com
-        </a>
-    </p>
-
-    <p>
-        <a href="tel:+919343315897">
-            <i class="fa-solid fa-phone"></i> phone: +91 9343315897
-        </a>
-    </p>
-
-    <p>
-        <a href="mailto:piyushlakhera315@gmail.com">
-            <i class="fa-solid fa-envelope"></i> gmail: piyushlakhera315@gmail.com
-        </a>
-    </p>
-
-    <p>
-        <a href="tel:+918103364914">
-            <i class="fa-solid fa-phone"></i> phone: +91 8103364914
-        </a>
-    </p>
+<h3 class="section-btn"><a href="#">SECTION 1</a></h3>
+<h4>DISCRIPTION:</h4>
+<p>OMNIA INDIA Is a mordern Technical & Visual Desine Studio We Specialize In High And Live Visuals (Vjing) end to end .event tech execution and digital experentiol content</p>
+<br><br>
+<h3 class="section-btn"><a href="#">SECTION 2</a></h3>
+<h4>EDUCATION:</h4>
+<p>Pursuing a Bachelor of Technology (B.Tech) specializing in Computer Science & Internet of Things (CSIOT). Cultivating advanced technical skills in smart hardware integration, data networks, and system architecture. Actively bridging the gap between engineering logic and high-end digital creativity. Leveraging academic core knowledge to design innovative visual solutions and real-world event tech execution.</p>
+<h3 class="section-btn"><a href="#">SECTION 3</a></h3>
+<h4>PROJECTS:</h4>
+</div> 
 </div>
-
-
- </body>
+<br><br>
+<!-- HEAR ARE MY CONTACTS DETAILS -->
+<div class="contact-content-box">
+<h3 class="section-btn"><a href="#">CONTACTS</a></h3>
+<p>
+<a href="mailto:omnxindia01@gmail.com">
+<i class="fa-solid fa-envelope"></i> gmail: omnxindia01@gmail.com
+</a>
+</p>
+<p>
+<a href="tel:+919343315897">
+<i class="fa-solid fa-phone"></i> phone: +91 9343315897
+</a>
+</p>
+<p>
+<a href="mailto:piyushlakhera315@gmail.com">
+<i class="fa-solid fa-envelope"></i> gmail: piyushlakhera315@gmail.com
+</a>
+</p>
+<p>
+<a href="tel:+918103364914">
+<i class="fa-solid fa-phone"></i> phone: +91 8103364914
+</a>
+</p>
+</div>
+</body>
 </html>
+
+From <https://github.com/omniaindia/omniaindia/blob/main/index.html> 
+
