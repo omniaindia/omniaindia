@@ -176,16 +176,16 @@ h4 {
     /* 1. Heading ko chhota aur upar set karna taaki logo se touch na ho */
     h1 {
         font-size: 1.1rem !important;
-        text-align: center !important;
+        text-align: top !important;
         margin-bottom: 5px !important;
-        line-height: 1.2 !important;
+        line-height: 1.4 !important;
     }
 
     /* 2. Logo image ko phone ke hisab se proper size dena */
     .site-logo, img.logo {
         display: block !important;
         margin: 0 auto 10px auto !important;
-        max-width: 75% !important;
+        max-width: 85% !important;
         height: auto !important;
     }
 
@@ -210,7 +210,7 @@ h4 {
         flex-wrap: wrap !important;
         justify-content: center !important;
         align-items: center !important;
-        gap: 6px 10px !important;
+        gap: 4px 8px !important;
         margin: 15px 0 !important;
         width: 100% !important;
     }
@@ -223,7 +223,7 @@ h4 {
 
     /* 5. Broken image ko hide karna ya fix karna taaki ajeeb na dikhe */
     img:not(.site-logo):not(.logo) {
-        max-width: 100% !important;
+        max-width: 150% !important;
         height: auto !important;
     }
 }
