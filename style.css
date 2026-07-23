@@ -168,3 +168,62 @@ h4 {
     color: aliceblue;
 }
 
+/* ==========================================
+   MOBILE FIX ONLY (Does not affect Laptop)
+   ========================================== */
+@media screen and (max-width: 768px) {
+
+    /* 1. Heading ko chhota aur upar set karna taaki logo se touch na ho */
+    h1 {
+        font-size: 1.1rem !important;
+        text-align: center !important;
+        margin-bottom: 5px !important;
+        line-height: 1.2 !important;
+    }
+
+    /* 2. Logo image ko phone ke hisab se proper size dena */
+    .site-logo, img.logo {
+        display: block !important;
+        margin: 0 auto 10px auto !important;
+        max-width: 75% !important;
+        height: auto !important;
+    }
+
+    /* 3. Typewriter Slogan ko 'M' ke theek neeche center lana */
+    .futuristic-brand-punchline {
+        display: block !important;
+        position: relative !important;
+        font-size: 0.75rem !important;
+        text-transform: uppercase !important;
+        color: #00f0ff !important;
+        text-align: center !important;
+        white-space: normal !important;
+        margin: 5px auto 15px auto !important;
+        max-width: 90% !important;
+        clear: both !important;
+    }
+
+    /* 4. Navigation Buttons ko professional ek line me clean wrap karna */
+    nav, .navbar, div.button, .menu-container {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 6px 10px !important;
+        margin: 15px 0 !important;
+        width: 100% !important;
+    }
+
+    nav a, .navbar a, div.button a {
+        font-size: 0.8rem !important;
+        padding: 4px 8px !important;
+        white-space: nowrap !important;
+    }
+
+    /* 5. Broken image ko hide karna ya fix karna taaki ajeeb na dikhe */
+    img:not(.site-logo):not(.logo) {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+}
