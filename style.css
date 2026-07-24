@@ -248,8 +248,54 @@ h4 {
 
 /* Yeh hai asli Hover Effect jo box ko chamkayega */
 .contact-content-box:hover {
-    box-shadow: 0px 0px 15px 2px rgba(0, 240, 255, 0.6); /* Cyan color ka neon glow */
-    border-color: #ffffff; /* Border ka color white ho jayega */
+    box-shadow: 0px 0px 15px 2px rgba(31, 119, 125, 0.6); /* Cyan color ka neon glow */
+    border-color: #ffffff95; /* Border ka color white ho jayega */
     background-color: rgba(0, 240, 255, 0.05); /* Background thoda sa roshan ho jayega */
     transform: translateY(-3px); /* Box halka sa upar uth jayega (3D feel) */
+}
+
+/* Creator Signature Styling */
+.creator-signature {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.creator-signature p {
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight:500;
+    color: #a0a0a0;
+    letter-spacing: 1px;
+}
+
+.creator-signature .my-name {
+    color: #00f0ff;
+    font-weight: bold;
+    text-shadow: 0px 0px 8px rgba(0, 240, 255, 0.6);
+}
+
+.creator-signature .my-name:hover {
+    color: #ffffff;
+    cursor: default;
+}
+
+.creator-signature .heart {
+    color: #ff3366;
+    display: inline-block;
+    animation: heartbeat 1.5s infinite;
+}
+
+/* Chota sa pyara sa heartbeat animation */
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+.creator-signature{
+    border-color: #00f0ff;
+    box-shadow: #052731;
+    transform: translatey(-2px);
 }
