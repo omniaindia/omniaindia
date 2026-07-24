@@ -8,7 +8,7 @@ body{
 .site-logo {
     width: 100%;           /* Screen ka 80% area lega, bohot bada nahi dikhega */
     max-width: width 1590px;     /* Laptop par itse bada kabhi nahi hoga */
-    height: 900;         /* Aspect ratio kharab nahi hoga */
+    height: 100%;         /* Aspect ratio kharab nahi hoga */
     display: block;
     border: 4px #451455;
     margin: 0 auto;       /* Screen ke center me rahega */
@@ -25,7 +25,7 @@ body{
 h2.futuristic-brand-punchline {
     text-align: center;
     position: absolute;  /* Isse text image ke upar aayega */
-    top: 80%;             /* Upar se position dene ke liye */
+    top: -100px;             /* Upar se position dene ke liye */
     left: 50%;
     transform: translate(-50%, -50%); /* Perfectly center karne ke liye */
     color: lab(82.69% -55.79 8.55);
@@ -41,7 +41,7 @@ h2.futuristic-brand-punchline {
     font-weight: 600;
     text-transform: uppercase;
     display: block !important;
-    text-align: center !important;
+    text-align: center top 20px !important;
     width: 100% !important;
     margin: 10px auto 20px auto !important;
     position: relative !important;   /* Absolute ki waja se jo upar chad raha tha, wo band ho jayega */
@@ -57,15 +57,21 @@ h2.futuristic-brand-punchline {
 }
 .button {
     text-align: center !important;
+    border-top: 1px solid #fcffff;
+    border-bottom: 2px solid #fbffff;
+    width: 100%;
+    padding-top: 6px!important;
+    padding-bottom: 6px !important;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 8px 15px;
-    margin: 10px 0;
+    gap: 6px 8px;
+    margin: 5px 0;
 }
 .btn{
     color:#e0e1dd;
-    text-decoration: none;
+    text-decoration:none;
+   
    
   
 }
@@ -76,9 +82,10 @@ h2.futuristic-brand-punchline {
 
     h1 {
     text-align: center !important;
+    text-align: buttom 10px;
     position: relative !important; /* Absolute hata kar relative kiya */
     left: auto !important;
-    font-size: 1.3rem;            /* Phone ke liye chhota size */
+    font-size: 1.5rem;            /* Phone ke liye chhota size */
     margin: 15px 0;
     width: 100%;
 }
@@ -91,7 +98,7 @@ h2.futuristic-brand-punchline {
 /* 1. Main Outer Box Wrapper (Parent Container) */
 .main-content-box {
     background-color: #000000;                   /* Premium Dark Charcoal background */
-    border: 1px solid rgba(0, 240, 255, 0.2);     /* Sleek, thin Electric Cyan border */
+    border: 2px solid rgba(0, 240, 255, 0.2);     /* Sleek, thin Electric Cyan border */
     padding: 25px;
     border-radius: 12px;                          /* Smooth rounded corners */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);   /* Depth shadow for 3D effect */
@@ -136,50 +143,66 @@ h4 {
     font-size: 1rem;
     margin-bottom: 20px;
 }
-/* ==========================================================
-   OMNIA INDIA - CONTACTS SECTION STYLES
-   ========================================================== */
-
-/* Main Outer Container Box */
-.contact-content-box {
-    background-color: #111111;                   /* Dark Premium Charcoal */
-    border: 1px solid rgba(0, 240, 255, 0.2);     /* Sharp Cyan Border */
-    padding: 30px;                                /* Clean Inside Spacing */
-    border-radius: 12px;                          /* UI Symmetry */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);   /* Depth Effect */
-    margin-top: 25px;
-    margin-bottom: 25px;
+.booking {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 15px; /* Dono boxes ke beech ka halka sa gap */
+    margin-top: 15px;
+    flex-wrap: wrap; /* Taaki phone par aane par ye niche khisak jayein, ladein nahi */
 }
 
-/* Paragraph Blocks Hierarchy */
-.contact-content-box p {
-    margin-bottom: 18px;                          /* Perfect gap between contacts */
-    font-size: 1rem;
+.booking-box {
+    width: 48%; /* Dono aadhi-aadhi jagah lein ge */
+    border: 1px solid #00f0ff;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #e0e1dd;
+    box-sizing: border-box;
+    border-radius: 4px;
 }
 
-/* Contact Anchor Links Styling */
-.contact-content-box p a {
-    color: #a0aec0 !important;                    /* Smooth Slate Grey text */
-    text-decoration: none;                        /* No text underline */
-    font-weight: 500;
-    display: inline-flex;
-    align-items: center;                          /* Icon and text vertical alignment */
-    transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
-}
-
-/* Font Awesome Icons Specific Accent */
-.contact-content-box p a i {
-    color: #00f0ff;                               /* Electric Cyan Icons */
-    margin-right: 12px;                           /* Clean spacing after icon */
+.box-title {
     font-size: 1.1rem;
+    color: #00f0ff;
+    margin-bottom: 8px;
+    text-align: center;
+    font-weight: bold;
 }
 
-/* Hover State Interaction */
-.contact-content-box p a:hover,
-.contact-content-box p a:active {
-    color: #00f0ff !important;                    /* Text shifts to Cyan */
-    text-shadow: 0 0 8px rgba(0, 240, 255, 0.5);  /* Cyberpunk Glow */
-    transform: translateX(4px);                   /* Sleek micro-interaction move */
+.box-desc {
+    font-size: 0.85rem;
+    color: #a0a0a0;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.order-input {
+    width: 100%;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #00f0ff;
+    color: #fff;
+    padding: 8px;
+    box-sizing: border-box;
+    resize: none;
+    font-family: inherit;
+    margin-bottom: 10px;
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: #00f0ff;
+    color: #000;
+    border: none;
+    padding: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.submit-btn:hover {
+    background-color: #fff;
 }
 
 .section-btn{
@@ -187,4 +210,46 @@ h4 {
 }
 .section-btn a {
     color: aliceblue;
+}
+/* Contacts Section Box Style */
+.contact-content-box {
+    width: 100%;
+    border: 1px solid #00f0ff;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-top: 15px;
+    color: #e0e1dd;
+}
+
+.contact-content-box p {
+    margin: 10px 0;
+    font-size: 0.95rem;
+}
+
+.contact-content-box a {
+    color: #00f0ff;
+    text-decoration: none;
+}
+
+.contact-content-box a:hover {
+    text-decoration: underline;
+}
+
+.contact-content-box i {
+    margin-right: 8px;
+    color: #00f0ff;
+}
+/* Smooth animation ke liye is line ko pehle wale .contact-content-box me add kar dena (agar pehle se nahi hai) */
+.contact-content-box {
+    transition: all 0.3s ease-in-out; 
+}
+
+/* Yeh hai asli Hover Effect jo box ko chamkayega */
+.contact-content-box:hover {
+    box-shadow: 0px 0px 15px 2px rgba(0, 240, 255, 0.6); /* Cyan color ka neon glow */
+    border-color: #ffffff; /* Border ka color white ho jayega */
+    background-color: rgba(0, 240, 255, 0.05); /* Background thoda sa roshan ho jayega */
+    transform: translateY(-3px); /* Box halka sa upar uth jayega (3D feel) */
 }
