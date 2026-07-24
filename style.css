@@ -25,7 +25,7 @@ body{
 h2.futuristic-brand-punchline {
     text-align: center;
     position: absolute;  /* Isse text image ke upar aayega */
-    top: -100px;             /* Upar se position dene ke liye */
+    top: 80%px;             /* Upar se position dene ke liye */
     left: 50%;
     transform: translate(-50%, -50%); /* Perfectly center karne ke liye */
     color: lab(82.69% -55.79 8.55);
@@ -82,7 +82,6 @@ h2.futuristic-brand-punchline {
 
     h1 {
     text-align: center !important;
-    text-align: buttom 10px;
     position: relative !important; /* Absolute hata kar relative kiya */
     left: auto !important;
     font-size: 1.5rem;            /* Phone ke liye chhota size */
